@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <header>
         <div className="container-fluid nav-cont mt-2">
             <nav className="navbar navBar navbar-static-top navbar-light navbar-expand-md display-inline">
