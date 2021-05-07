@@ -1,0 +1,41 @@
+body {
+  background-image: url(./images/background1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body a {
+  color: white;
+  text-decoration: none;
+}
+body a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+.panel {
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.6 );
+  backdrop-filter: blur( 15px );
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(255,255,255,0.2);
+  border-radius: 7px;
+  display: inline-block;
+  /* alignment: top; */
+  display: flex;
+}
+
+.main-text-type{
+  font-family: Zen Dots, monospace;
+  font-size: 16px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.main-cont {
+  margin: 20px !important;
+  padding: 20px;
+  width: auto;
+}

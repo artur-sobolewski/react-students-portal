@@ -1,0 +1,52 @@
+.adding-form {
+    text-align: right;
+    font-family: Zen Dots, monospace;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 16px;
+    width: 100% !important;
+    display: flex;
+    margin: 10px;
+}
+
+.adding-form label {
+    font-size: 20px;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+
+
+input[type="file"]
+{
+    font-family: Poppins, monospace;
+    font-size:12px;
+    text-align: center;
+}
+input[type="text"]
+{
+    font-family: Poppins, monospace;
+    font-size:16px;
+}
+
+textarea[type="text"]
+{
+    font-family: Poppins, monospace;
+    font-size:16px;
+}
+
+.break-text {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: vertical;
+    min-height: 40px;
+    line-height: 20px;
+}
+
+.my-button {
+    display: inline-block;
+    width: 300px;
+}
