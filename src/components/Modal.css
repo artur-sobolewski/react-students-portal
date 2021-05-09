@@ -1,0 +1,67 @@
+.edit-form {
+    text-align: right;
+    font-family: Zen Dots, monospace;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 16px;
+    width: 100% !important;
+    display: flex;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.0);
+}
+
+.edit-form label {
+    font-size: 20px;
+}
+
+/* .modal-header
+ {
+     padding:9px 15px;
+     border-bottom:1px solid #eee;
+     background-color: #0480be;
+     border-radius: 10px;
+ } */
+ /* .modal-body
+ {
+     padding:9px 15px;
+     border-bottom:1px solid #eee;
+     background-color: #0480be;
+     border-radius: 10px;
+ } */
+
+ /* .modal-content {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #0480be;
+    border-radius: 10px;
+ } */
+
+ .modal-content {
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.6 );
+    backdrop-filter: blur( 15px );
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.5);
+    background-color: rgba( 255, 255, 255, 0.3 );
+    border-radius: 7px;
+    display: inline-block;
+    /* alignment: top; */
+    display: flex;
+ }
+
+ .edit-button {
+    margin-top: 10px;
+    font-family: Zen Dots, monospace;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    display: inline-block;
+    width: 100%;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.5);
+    background-color: rgba(245, 171, 59,0.4);
+}
+
+.edit-button:hover {
+    color: white;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.6 );
+}

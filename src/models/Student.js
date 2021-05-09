@@ -6,5 +6,11 @@ class Student {
         this.photoSrc = photoSrc;
         this.tags = tags;
     }
+
+    
+    set newName(newName) {
+        this.name = newName;
+    }
+
 }
 export default Student;

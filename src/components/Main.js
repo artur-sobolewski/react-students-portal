@@ -9,7 +9,6 @@ import person from '../images/person.png';
 import samole_pic from '../images/sample_pic.png';
 import SearchingPanel from './SearchingPanel';
 
-
 class Main extends Component {
 
     state = {
@@ -59,13 +58,13 @@ class Main extends Component {
                 if (this.state.searchingTag === "") {
                     return (
 
-                        <StudentInfoPane key={index} studentInfo={student}/>
+                        <StudentInfoPane key={index + 100} studentInfo={student}/>
 
                     )
                 } else if (student.tags.includes(this.state.searchingTag)) {
                     return (
                         <>
-                            <StudentInfoPane key={index} studentInfo={student}/>
+                            <StudentInfoPane key={index + 100} studentInfo={student}/>
                         </>
                     )
                 }
@@ -76,7 +75,7 @@ class Main extends Component {
                             this.state.searchingDesc.toLocaleLowerCase())) {
                         return (
                             <>
-                                <StudentInfoPane key={index} studentInfo={student}/>
+                                <StudentInfoPane key={index + 100} studentInfo={student}/>
                             </>
                         )
                     }
@@ -85,7 +84,7 @@ class Main extends Component {
                     student.tags.includes(this.state.searchingTag)) {
                     return (
                         <>
-                            <StudentInfoPane key={index} studentInfo={student}/>
+                            <StudentInfoPane key={index + 100} studentInfo={student}/>
                         </>
                     )
                 }
@@ -94,31 +93,28 @@ class Main extends Component {
         const studentsToArray = () => {
             const map = {renderStudentsList};
             return Object.keys(map).map((key) => map[key]);
-        }
+        };
         return (
             <Switch>
                 <Route path="/" exact>
                     <div className="main-cont">
                         <div className="row">
-
-                            <div className="col-12 col-sm-3 container-fluid float-center centered-text p-3">
+                            <div className="col-12 col-md-3 container-fluid float-center centered-text p-3">
                                 <SearchingPanel 
                                     captureDescSearching={this.handleSearchingDescValue}
                                     captureTagSearching={this.handleSearchingTagValue}
                                 />
                             </div>
-
-                            <div className="col-12 col-sm-7 offset-sm-2 float-center" id="listOfStudents">
+                            <div className="col-12 col-md-7 offset-md-2 float-center" id="listOfStudents">
                                 <StudentsList children={studentsToArray()}/>
                             </div>
-
-                            
                         </div>
                     </div>
-                    {/* <StudentsList children={studentsToArray()}/> */}
                 </Route>
                 <Route path="/new" >
-                    <AddStudent appendStudent={this.appendStudent}/>
+                    <div className="container-fluid float-center">
+                        <AddStudent appendStudent={this.appendStudent}/>
+                    </div>
                 </Route>
             </Switch>
         );

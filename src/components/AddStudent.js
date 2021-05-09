@@ -2,6 +2,9 @@ import React from 'react';
 import Student from '../models/Student';
 import './AddStudent.css'
 import person from '../images/person.png';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
+
 
 const AddStudent = (props) => {
     const [name, setName] = React.useState("");
@@ -17,7 +20,9 @@ const AddStudent = (props) => {
     }
 
     function onPressed() {
+        
         let t;
+        
         if (name !== "" && surname !== "") {
             if (photoUrl === "") {
                 t = tags.toLowerCase().split(" ");
@@ -26,14 +31,22 @@ const AddStudent = (props) => {
                 t = tags.toLowerCase().split(" ");
                 newStud = new Student(name, surname, description, photoUrl, t);
             }
-            props.appendStudent(newStud);
-            newStud = null;
-            setName("");
-            setSurname("");
-            setDescription("");
-            setPhotoUrl("");
-            setTags("");
-            setShowWarning(false);
+            if( newStud !== null)
+            {
+                props.appendStudent(newStud);
+                newStud = null;
+                setName("");
+                setSurname("");
+                setDescription("");
+                setPhotoUrl("");
+                setTags("");
+                setShowWarning(false);
+                return NotificationManager.success("Application has been added correctly", 'Success');
+            }
+            else {
+                return NotificationManager.error("Something gone wrong", 'Error', 5000);
+            }
+            
         } else if (name === "") {
             setShowWarning(true);
         } else if (name === "") {
@@ -47,19 +60,28 @@ const AddStudent = (props) => {
             if (name !== "" && surname !== "") {
                 if (photoUrl === "") {
                     t = tags.split(" ");
-                    newStud = new Student(name, surname, description, "./person.png", t);
+                    newStud = new Student(name, surname, description, person, t);
                 } else {
                     t = tags.split(" ");
                     newStud = new Student(name, surname, description, photoUrl, t);
                 }
-                props.appendStudent(newStud);
-                newStud = null;
-                setName("");
-                setSurname("");
-                setDescription("");
-                setPhotoUrl("");
-                setTags("");
-                setShowWarning(false);
+                if( newStud !== null)
+                {
+                    props.appendStudent(newStud);
+                    newStud = null;
+                    setName("");
+                    setSurname("");
+                    setDescription("");
+                    setPhotoUrl("");
+                    setTags("");
+                    setShowWarning(false);
+                    console.log("ok");
+                    return NotificationManager.success("Application has been added correctly", 'Success');
+                }
+                else {
+                   return NotificationManager.error("Something gone wrong", 'Error', 5000);
+                }
+                
             } else if (name === "") {
                 setShowWarning(true);
             } else if (name === "") {
@@ -141,7 +163,6 @@ const AddStudent = (props) => {
                             id={"tags"}
                             className={"bg-light form-control"}
                             onChange={(e) => setTags(e.target.value)}
-                            onKeyDown={handleKey}
                         />
                     </div>
                 </div>
@@ -163,10 +184,13 @@ const AddStudent = (props) => {
                 <div className="row col-12 mb-2 centered-text">
                     <div className="col-12">
                         <button className="btn btn-success my-button" onClick={onPressed}>Apply</button>
+                        {/* <button className="btn btn-success my-button" onClick={createNotification('success', "Application has been added correctly")}>Apply</button> */}
+                        <NotificationContainer/>
                     </div>
                 </div>
             </div>
         </div>
+        
         </>
     )
 }
