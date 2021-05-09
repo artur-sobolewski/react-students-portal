@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/PIW-Lab5-Sobolewski/static/css/main.00dc0359.chunk.css",
-    "main.js": "/PIW-Lab5-Sobolewski/static/js/main.ccfad987.chunk.js",
-    "main.js.map": "/PIW-Lab5-Sobolewski/static/js/main.ccfad987.chunk.js.map",
-    "runtime-main.js": "/PIW-Lab5-Sobolewski/static/js/runtime-main.cee8bdca.js",
-    "runtime-main.js.map": "/PIW-Lab5-Sobolewski/static/js/runtime-main.cee8bdca.js.map",
+    "main.css": "/PIW-Lab5-Sobolewski/static/css/main.24746c50.chunk.css",
+    "main.js": "/PIW-Lab5-Sobolewski/static/js/main.aaedce81.chunk.js",
+    "main.js.map": "/PIW-Lab5-Sobolewski/static/js/main.aaedce81.chunk.js.map",
+    "runtime-main.js": "/PIW-Lab5-Sobolewski/static/js/runtime-main.4018711b.js",
+    "runtime-main.js.map": "/PIW-Lab5-Sobolewski/static/js/runtime-main.4018711b.js.map",
     "static/css/2.ac12b2cc.chunk.css": "/PIW-Lab5-Sobolewski/static/css/2.ac12b2cc.chunk.css",
-    "static/js/2.f756e0e6.chunk.js": "/PIW-Lab5-Sobolewski/static/js/2.f756e0e6.chunk.js",
-    "static/js/2.f756e0e6.chunk.js.map": "/PIW-Lab5-Sobolewski/static/js/2.f756e0e6.chunk.js.map",
-    "static/js/3.57ab4ee1.chunk.js": "/PIW-Lab5-Sobolewski/static/js/3.57ab4ee1.chunk.js",
-    "static/js/3.57ab4ee1.chunk.js.map": "/PIW-Lab5-Sobolewski/static/js/3.57ab4ee1.chunk.js.map",
+    "static/js/2.ae9b3dfa.chunk.js": "/PIW-Lab5-Sobolewski/static/js/2.ae9b3dfa.chunk.js",
+    "static/js/2.ae9b3dfa.chunk.js.map": "/PIW-Lab5-Sobolewski/static/js/2.ae9b3dfa.chunk.js.map",
+    "static/js/3.8b2bc961.chunk.js": "/PIW-Lab5-Sobolewski/static/js/3.8b2bc961.chunk.js",
+    "static/js/3.8b2bc961.chunk.js.map": "/PIW-Lab5-Sobolewski/static/js/3.8b2bc961.chunk.js.map",
     "index.html": "/PIW-Lab5-Sobolewski/index.html",
     "static/css/2.ac12b2cc.chunk.css.map": "/PIW-Lab5-Sobolewski/static/css/2.ac12b2cc.chunk.css.map",
-    "static/css/main.00dc0359.chunk.css.map": "/PIW-Lab5-Sobolewski/static/css/main.00dc0359.chunk.css.map",
-    "static/js/2.f756e0e6.chunk.js.LICENSE.txt": "/PIW-Lab5-Sobolewski/static/js/2.f756e0e6.chunk.js.LICENSE.txt",
+    "static/css/main.24746c50.chunk.css.map": "/PIW-Lab5-Sobolewski/static/css/main.24746c50.chunk.css.map",
+    "static/js/2.ae9b3dfa.chunk.js.LICENSE.txt": "/PIW-Lab5-Sobolewski/static/js/2.ae9b3dfa.chunk.js.LICENSE.txt",
     "static/media/App.css": "/PIW-Lab5-Sobolewski/static/media/background1.58b54d39.jpg",
     "static/media/linus.361cd7d9.jpg": "/PIW-Lab5-Sobolewski/static/media/linus.361cd7d9.jpg",
     "static/media/logo.e88016e0.png": "/PIW-Lab5-Sobolewski/static/media/logo.e88016e0.png",
@@ -22,10 +22,10 @@
     "static/media/sample_pic.4c2f34a8.png": "/PIW-Lab5-Sobolewski/static/media/sample_pic.4c2f34a8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cee8bdca.js",
+    "static/js/runtime-main.4018711b.js",
     "static/css/2.ac12b2cc.chunk.css",
-    "static/js/2.f756e0e6.chunk.js",
-    "static/css/main.00dc0359.chunk.css",
-    "static/js/main.ccfad987.chunk.js"
+    "static/js/2.ae9b3dfa.chunk.js",
+    "static/css/main.24746c50.chunk.css",
+    "static/js/main.aaedce81.chunk.js"
   ]
 }
