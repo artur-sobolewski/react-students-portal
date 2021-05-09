@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PIW-Lab5-Sobolewski/static/css/main.24746c50.chunk.css",
-    "main.js": "/PIW-Lab5-Sobolewski/static/js/main.c70c9b62.chunk.js",
-    "main.js.map": "/PIW-Lab5-Sobolewski/static/js/main.c70c9b62.chunk.js.map",
+    "main.js": "/PIW-Lab5-Sobolewski/static/js/main.0cdabda5.chunk.js",
+    "main.js.map": "/PIW-Lab5-Sobolewski/static/js/main.0cdabda5.chunk.js.map",
     "runtime-main.js": "/PIW-Lab5-Sobolewski/static/js/runtime-main.4018711b.js",
     "runtime-main.js.map": "/PIW-Lab5-Sobolewski/static/js/runtime-main.4018711b.js.map",
     "static/css/2.ac12b2cc.chunk.css": "/PIW-Lab5-Sobolewski/static/css/2.ac12b2cc.chunk.css",
@@ -26,6 +26,6 @@
     "static/css/2.ac12b2cc.chunk.css",
     "static/js/2.ae9b3dfa.chunk.js",
     "static/css/main.24746c50.chunk.css",
-    "static/js/main.c70c9b62.chunk.js"
+    "static/js/main.0cdabda5.chunk.js"
   ]
 }
