@@ -2,7 +2,7 @@
 
 ### Artur Sobolewski 248913
 
-#### Przepraszam za spore opóźnienie, ale przesłałem też strone z Lab 4. Jest ona na repozytorium pod linikem: 
+#### Lab4:
 #### https://github.com/arturex178/Programowanie-interfejsow-webowych/tree/main 
 #### Pliki źródłowe są w folderze docs.
 
